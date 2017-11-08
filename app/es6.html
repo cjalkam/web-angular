@@ -1,0 +1,63 @@
+<html>
+<head>
+        <script>
+           let number = [1,2,3,4,5];
+            
+           let newNumber = 6;
+          //  number.push(newNumber);// mutable
+            let newNumberArray = [...number,newNumber];
+            console.log("New array", newNumberArray);
+            console.log("Old Array", number);
+
+          class Arithematic {
+           
+            constructor(number){
+                this.number = number;
+            }
+
+            process(callback){
+                this.operation = "Defined";
+                return callback(this.number);
+
+            }
+
+            add(){
+              
+              let result =   this.process( (number)=>{
+                        console.log(this.operation);
+                        let result = 0;
+                        let i = 0;
+                        for(i = 0 ; i < number.length;i++){
+                            result = result + number[i];
+                        }
+
+                        return result;
+
+                });
+
+              return result;
+
+            }
+
+
+
+          }
+
+        
+
+              
+
+
+            
+            
+        </script>
+
+
+</head>
+  
+
+
+
+
+
+</html>

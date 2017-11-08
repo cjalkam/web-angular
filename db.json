@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "X-box",
+      "type": "Games",
+      "premium": true
+    },
+    {
+      "id": 2,
+      "name": "Iphone",
+      "type": "gadget",
+      "premium": true
+    },
+    {
+      "id": 4,
+      "name": "Ghosts",
+      "type": "Book",
+      "premium": true
+    },
+    {
+      "id": 5,
+      "name": "Ipad pro",
+      "type": "Tablet",
+      "premium": false
+    }
+  ]
+}
